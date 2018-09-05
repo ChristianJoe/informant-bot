@@ -75,6 +75,20 @@ const tableProps = {
             },
         ],
     },
+    'quizresponses': {
+        AttributeDefinitions: [
+            {
+                AttributeName: 'key',
+                AttributeType: 'S',
+            },
+        ],
+        KeySchema: [
+            {
+                AttributeName: 'key',
+                KeyType: 'HASH',
+            },
+        ],
+    },
 };
 
 const tableNames = (stage) => {
